@@ -1,0 +1,57 @@
+.new-fb-btn{
+  margin: 5px auto;
+  display: inline-block;
+}
+
+.new-fb-btn,
+.new-fb-btn div{
+  font-size:14px;
+  font-weight:600;
+  font-family:'Open Sans',sans-serif;
+  color:#fff;
+  text-shadow:0 0 1px RGBA(0,0,0,1);
+  white-space:nowrap;
+  vertical-align:middle;
+}
+
+/*
+  Style 4 --------------
+*/
+.new-fb-4,
+.new-fb-4 div{
+  height: 35px;
+  line-height: 32px;
+  background: url('facebook-btn.png') no-repeat 0 0;
+}
+
+div.new-fb-4{
+  padding: 0 0 0 4px;
+  background-position: 0 -450px;
+}
+
+div.new-fb-4-1{
+  padding: 0 33px 0 0;
+  background-position: right -550px;
+}
+
+div.new-fb-4-1-1{
+  background-repeat: repeat-x;
+  background-position: 0 -500px;
+  padding: 0 19px 0 18px;
+  font-size: 12px;
+}
+/*
+  Main animations
+*/
+
+.new-fb-default-anim{
+  opacity: 0.85;
+  transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s; /* Firefox 4 */
+  -webkit-transition: opacity 0.4s; /* Safari and Chrome */
+  -o-transition: opacity 0.4s; /* Opera */
+}
+
+.new-fb-default-anim:HOVER{
+  opacity: 0.999;
+}

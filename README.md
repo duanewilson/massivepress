@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 massivepress
 ============
 
@@ -13,7 +14,7 @@ see the theme live at http://startupcharlottesville.com
 
 MassivePress makes use of a few other plugins and services which are highly encouraged but not technically necessary, we are using icomoon but fontawesome.io is awesome as well if you need more icons, the nice folks at bootstrapcdn.com have it hosted too.
 
-They include: 
+They include:
 
  1. Nextend Facebook Connect by Roland Soos [http://nextendweb.com/]
  2. Pie Register by Genetech [http://genetechsolutions.com/pie-register.html]
@@ -27,10 +28,11 @@ They include:
  10. Google hosted jquery [https://developers.google.com/speed/libraries/devguide#jquery]
  11. Default Featured Image copyright pepsized.com
  12. Default Cover Image copyright Duane Wilson
- 
+ 13. Font: Open Sans, used as webfont but available as a download from Font Squirrel [http://www.fontsquirrel.com/fonts/open-sans]
+
 ## Based Upon
 MediumPress by Arrizal Amin [https://github.com/arrizalamin/MediumPress]
- 
+
 The MIT License (MIT)
 
 Copyright (c) 2013 Arrizal Amin
@@ -51,3 +53,4 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+>>>>>>> ef16441e691e4df7fce8df290c2ae7d6c47896d6
