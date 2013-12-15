@@ -25,6 +25,8 @@ They include:
  8. backstretch.js [http://srobbin.com/jquery-plugins/backstretch/]
  9. Google web fonts [http://www.google.com/fonts]
  10. Google hosted jquery [https://developers.google.com/speed/libraries/devguide#jquery]
+ 11. Default Featured Image copyright pepsized.com
+ 12. Default Cover Image copyright Duane Wilson
  
 ## Based Upon
 MediumPress by Arrizal Amin [https://github.com/arrizalamin/MediumPress]
