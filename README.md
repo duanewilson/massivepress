@@ -27,6 +27,7 @@ They include:
  10. Google hosted jquery [https://developers.google.com/speed/libraries/devguide#jquery]
  11. Default Featured Image copyright pepsized.com
  12. Default Cover Image copyright Duane Wilson
+ 13. Font: Open Sans, used as webfont but available as a download from Font Squirrel [http://www.fontsquirrel.com/fonts/open-sans] 
  
 ## Based Upon
 MediumPress by Arrizal Amin [https://github.com/arrizalamin/MediumPress]
