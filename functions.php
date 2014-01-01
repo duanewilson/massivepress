@@ -226,3 +226,13 @@ add_filter('previous_post_link', 'post_link_attributes');
     return str_replace('<a href=', '<a '.$code.' href=', $output);
 }
 
+/*
+ * Attach the bootstrap 3x class img-responsive to linked images
+ */
+
+function add_image_class($class){
+	$class .= ' img-responsive';
+	return $class;
+}
+add_filter('get_image_tag_class','add_image_class');
+
