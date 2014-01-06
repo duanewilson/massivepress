@@ -96,8 +96,13 @@ ga('send', 'pageview');
 			<li><a href="<?php bloginfo('siteurl'); ?>/wp-login.php?loginFacebook=1"><i class="icon-facebook"></i> &nbsp;Connect</a></li>
 			<?php } ?>
 
-
 		</ul>
+
+	<?php if ( is_active_sidebar( 'left-sidebar' ) ) : ?>
+		<ul id="sidebar">
+			<?php dynamic_sidebar( 'left-sidebar' ); ?>
+		</ul>
+	<?php endif; ?>
 	</nav>
 
 	<div class="wrapper">

@@ -14,7 +14,12 @@
 			</div>
 			<div class="post-content-list">
 				<?php the_excerpt(); ?>
-				<small><?php include (TEMPLATEPATH . '/inc/meta.php' ); ?></small>
+				<small>
+				<?php
+					 //include (TEMPLATEPATH . '/inc/meta.php' );
+					 get_template_part('/inc/meta.php')
+				?>
+				</small>
 			</div>
 
 		</div>

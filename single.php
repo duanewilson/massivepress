@@ -29,7 +29,10 @@
 			<div class="bio-and-post-group">
 				<div <?php post_class('index-box') ?> id="post-<?php the_ID(); ?>">
 
-					<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
+					<?php
+						//include (TEMPLATEPATH . '/inc/meta.php' );
+						get_template_part('/inc/meta.php')
+					?>
 
 					<div id="post-readability">
 					 <div class="post-title"><?php the_title(); ?></div>

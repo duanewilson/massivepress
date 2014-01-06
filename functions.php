@@ -18,41 +18,20 @@
 	add_filter( 'wp_nav_menu', 'wp_nav_menu_remove_attributes', 'add_menuclass');
 
 	// Add RSS links to <head> section
-	// add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'automatic-feed-links' );
+
+	// textdomain
+	load_theme_textdomain( 'massivepress', get_template_directory() . '/languages' );
+
+	if ( ! isset( $content_width ) ) {
+		$content_width = 1200;
+	}
 
 	// Load jQuery
 	if ( !is_admin() ) {
 	   wp_deregister_script('jquery');
 	   wp_register_script('jquery', ("http://code.jquery.com/jquery-1.10.1.min.js"), false);
 	   wp_enqueue_script('jquery');
-	}
-
-	function mediumpress_comment($comment, $args, $depth) {
-		$GLOBALS['comment'] = $comment;
-	?>
-		<li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
-			<div id="comment-<?php comment_ID(); ?>">
-				<div class="comment-author vcard">
-					<?php echo get_avatar($comment, $size = '15', $default = get_bloginfo('stylesheet_directory').'/images/no-pic.png' ); ?>
-					<?php printf(__('<span class="fn" style="font-size:15px;">%s:</span>'), get_comment_author_link()) ?>
-				</div>
-				<?php if ($comment->comment_approved == '0') : ?>
-					<p style="font-size:15px;margin-left:19px;"><?php _e('Your comment is awaiting moderation.') ?></p style="font-size:15px;">
-					<br />
-				<?php endif; ?>
-				<div style="margin-left:19px;">
-					<div class="comment-meta commentmetadata" style="font-size:9px;">
-						<a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></a>
-						<?php edit_comment_link(__('(Edit)'),'  ','') ?>
-					</div>
-					<p style="font-size:15px;"><?php echo $comment->comment_content; ?></p>
-
-					<div class="reply" style="font-size:10px;">
-						<?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
-					</div>
-				</div>
-			</div>
-	<?php
 	}
 
 	function custom_excerpt_length( $length ) {
