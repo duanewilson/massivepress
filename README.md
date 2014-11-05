@@ -1,11 +1,7 @@
 massivepress
 ============
 
-A Bootstrap 3 based theme modeled after medium.com
-
-## Demo
-
-see the theme live at http://massivemobile.com
+A Bootstrap 3 based theme modeled after an early version of medium.com
 
 
 ## Setup
